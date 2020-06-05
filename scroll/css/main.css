@@ -90,7 +90,7 @@ textarea {
 /* FireFox */
 article {
   height: 35em;
-  overflow-y: scroll; 
+  overflow-y: scroll;
   scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0);
   scrollbar-width: thin;
 }
@@ -101,12 +101,12 @@ article:hover {
 
 /* WebKit */
 article::-webkit-scrollbar, article::-webkit-scrollbar-track  {
-  width: 12px;
+  width: 10px;
   background-color: rgba(0, 0, 0, 0);
 }
 
 article::-webkit-scrollbar-thumb {
-  border-radius: 6px;
+  border-radius: 5px;
   background-color: rgba(0, 0, 0, 0);
 }
 
