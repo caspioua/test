@@ -84,12 +84,13 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Scrollbar Styles
    ========================================================================== */
 
+/* FireFox */
 article {
   height: 35em;
-  overflow-y: scroll;
+  overflow-y: scroll; 
   scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0);
   scrollbar-width: thin;
 }
@@ -98,31 +99,25 @@ article:hover {
   scrollbar-color: rgba(128, 128, 128, 1) rgba(0,0,0,0);
 }
 
-/* total width */
-article::-webkit-scrollbar {
-  width: 16px;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-/* space below the scrollbar */
-article::-webkit-scrollbar-track {
+/* WebKit */
+article::-webkit-scrollbar, article::-webkit-scrollbar-track  {
+  width: 12px;
   background-color: rgba(0, 0, 0, 0);
 }
 
 article::-webkit-scrollbar-thumb {
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: rgba(0, 0, 0, 0);
 }
 
-/* scrollbar itself */
 article:hover::-webkit-scrollbar-thumb {
   background-color: rgba(128, 128, 128, 1);
-  border: 5px solid #fff;
+  border: 2px solid #fff; /* this color should be adjusted to the scrollable area background color */
 }
 
 article:hover::-webkit-scrollbar-thumb:hover {
   background-color: rgba(126, 126, 126, 1);
-  border-width:4px;
+  border-width: 1px;
 }
 
 
