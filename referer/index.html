@@ -13,35 +13,35 @@
 
 <body>
     <h1>Referer Test Page</h1>
-    <p><a>https://textslashplain.com/2019/10/16/privacy-tweaks-limiting-referrer/</a></p>
+    <p><a href=https://textslashplain.com/2019/10/16/privacy-tweaks-limiting-referrer/>https://textslashplain.com/2019/10/16/privacy-tweaks-limiting-referrer/</a></p>
     <dl>
         <dt>(http) <a referrerpolicy="unsafe-url" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=unsafe-url</a></dt>
         <dt>(https) <a referrerpolicy="unsafe-url" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=unsafe-url</a></dt>
         <dd>Send the full URL (<a href="https://w3c.github.io/webappsec-referrer-policy/#strip-url">lacking only auth info and fragment</a>), even on navigations from HTTPS to HTTP</dd>
             
         <dt><a referrerpolicy="no-referrer" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer</a></dt>
-        <dd>no-referrer – Do not send a Referer<dd>
+        <dd>Do not send a Referer<dd>
         
         <dt>(http) <a referrerpolicy="no-referrer-when-downgrade" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer-when-downgrade</a></dt>
         <dt>(https) <a referrerpolicy="no-referrer-when-downgrade" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer-when-downgrade</a></dt>
-        <dd>no-referrer-when-downgrade – Don’t send the Referer when navigating from HTTPS to HTTP. <strong>[The longstanding default behavior of browsers]</strong><dd>
+        <dd>Don’t send the Referer when navigating from HTTPS to HTTP. <strong>[The longstanding default behavior of browsers]</strong><dd>
         
         <dt>(http) <a referrerpolicy="strict-origin-when-cross-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin-when-cross-origin</a></dt>
         <dt>(https) <a referrerpolicy="strict-origin-when-cross-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin-when-cross-origin</a></dt>
-        <dd>strict-origin-when-cross-origin – For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send nothing when navigating from HTTPS to HTTP. <strong>[The new default]</strong><dd>
+        <dd>For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send nothing when navigating from HTTPS to HTTP. <strong>[The new default]</strong><dd>
         
         <dt>(http) <a referrerpolicy="origin-when-cross-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin-when-cross-origin</a></dt>
         <dt>(https) <a referrerpolicy="origin-when-cross-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin-when-cross-origin</a></dt>
-        <dd>origin-when-cross-origin – For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send the Referer even when navigating from HTTPS to HTTP<dd>
+        <dd>For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send the Referer even when navigating from HTTPS to HTTP<dd>
         
         <dt><a referrerpolicy="same-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=same-origin</a></dt>
-        <dd>same-origin – Send the Referer only for same-origin navigations<dd>
+        <dd>Send the Referer only for same-origin navigations<dd>
         
         <dt><a referrerpolicy="origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin</a></dt>
-        <dd>origin – Send only the Origin of the referring page<dd>
+        <dd>Send only the Origin of the referring page<dd>
         
         <dt><a referrerpolicy="strict-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin</a></dt>
-        <dd>strict-origin – Send only the Origin of the referring page; send nothing when navigating from HTTPS to HTTP<dd>
+        <dd>Send only the Origin of the referring page; send nothing when navigating from HTTPS to HTTP<dd>
     </dl>
 </body>
 </html>
