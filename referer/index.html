@@ -14,28 +14,28 @@
 <body>
     <h1>Referer Test Page</h1>
     <dl>
-        <dt><a referrerpolicy="unsafe-url" href="http://webdbg.com/test/refer/">referrerpolicy=unsafe-url</a></dt>
+        <dt><a referrerpolicy="unsafe-url" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=unsafe-url</a></dt>
         <dd>Send the full URL (<a href="https://w3c.github.io/webappsec-referrer-policy/#strip-url">lacking only auth info and fragment</a>), even on navigations from HTTPS to HTTP.</dd>
             
-        <dt><a referrerpolicy="no-referrer" href="http://webdbg.com/test/refer/">referrerpolicy=no-referrer</a></dt>
+        <dt><a referrerpolicy="no-referrer" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer</a></dt>
         <dd>no-referrer – Do not send a Referer.<dd>
         
-        <dt><a referrerpolicy="no-referrer-when-downgrade" href="http://webdbg.com/test/refer/">referrerpolicy=no-referrer-when-downgrade</a></dt>
+        <dt><a referrerpolicy="no-referrer-when-downgrade" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer-when-downgrade</a></dt>
         <dd>no-referrer-when-downgrade – Don’t send the Referer when navigating from HTTPS to HTTP. <strong>[The longstanding default behavior of browsers]</strong><dd>
         
-        <dt><a referrerpolicy="strict-origin-when-cross-origin" href="http://webdbg.com/test/refer/">referrerpolicy=strict-origin-when-cross-origin</a></dt>
+        <dt><a referrerpolicy="strict-origin-when-cross-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin-when-cross-origin</a></dt>
         <dd>strict-origin-when-cross-origin – For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send nothing when navigating from HTTPS to HTTP. <strong>[The new default]</strong><dd>
         
-        <dt><a referrerpolicy="origin-when-cross-origin" href="http://webdbg.com/test/refer/">referrerpolicy=origin-when-cross-origin</a></dt>
+        <dt><a referrerpolicy="origin-when-cross-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin-when-cross-origin</a></dt>
         <dd>origin-when-cross-origin – For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send the Referer even when navigating from HTTPS to HTTP<dd>
         
-        <dt><a referrerpolicy="same-origin" href="http://webdbg.com/test/refer/">referrerpolicy=same-origin</a></dt>
+        <dt><a referrerpolicy="same-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=same-origin</a></dt>
         <dd>same-origin – Send the Referer only for same-origin navigations<dd>
         
-        <dt><a referrerpolicy="origin" href="http://webdbg.com/test/refer/">referrerpolicy=origin</a></dt>
+        <dt><a referrerpolicy="origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin</a></dt>
         <dd>origin – Send only the Origin of the referring page<dd>
         
-        <dt><a referrerpolicy="strict-origin" href="http://webdbg.com/test/refer/">referrerpolicy=strict-origin</a></dt>
+        <dt><a referrerpolicy="strict-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin</a></dt>
         <dd>strict-origin – Send only the Origin of the referring page; send nothing when navigating from HTTPS to HTTP<dd>
     </dl>
 </body>
