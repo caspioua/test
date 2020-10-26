@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Referer Test</title>
+    <title>Blocked 3rd-party Cookies - Test Page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,38 +12,9 @@
 </head>
 
 <body>
-    <h1>Referer Test Page</h1>
-    <p><a href=https://textslashplain.com/2019/10/16/privacy-tweaks-limiting-referrer/>https://textslashplain.com/2019/10/16/privacy-tweaks-limiting-referrer/</a></p>
-    <pre><code>&lt;a referrerpolicy="unsafe-url" href="http://webdbg.com/test/refer/"&gt;Send the full unstripped Referrer, even to HTTP sites&lt;/a&gt;</code></pre>
-    <h2>Examples</h2>
-    <dl>
-        <dt>(http) <a referrerpolicy="unsafe-url" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=unsafe-url</a></dt>
-        <dt>(https) <a referrerpolicy="unsafe-url" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=unsafe-url</a></dt>
-        <dd>Send the full URL (<a href="https://w3c.github.io/webappsec-referrer-policy/#strip-url">lacking only auth info and fragment</a>), even on navigations from HTTPS to HTTP</dd>
-            
-        <dt><a referrerpolicy="no-referrer" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer</a></dt>
-        <dd>Do not send a Referer<dd>
-        
-        <dt>(http) <a referrerpolicy="no-referrer-when-downgrade" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer-when-downgrade</a></dt>
-        <dt><mark>(https) <a referrerpolicy="no-referrer-when-downgrade" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=no-referrer-when-downgrade</a></mark></dt>
-        <dd>Don’t send the Referer when navigating from HTTPS to HTTP. <strong>[The longstanding default behavior of browsers]</strong><dd>
-        
-        <dt>(http) <a referrerpolicy="strict-origin-when-cross-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin-when-cross-origin</a></dt>
-        <dt>(https) <a referrerpolicy="strict-origin-when-cross-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin-when-cross-origin</a></dt>
-        <dd>For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send nothing when navigating from HTTPS to HTTP. <strong>[The new default]</strong><dd>
-        
-        <dt>(http) <a referrerpolicy="origin-when-cross-origin" href="http://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin-when-cross-origin</a></dt>
-        <dt>(https) <a referrerpolicy="origin-when-cross-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin-when-cross-origin</a></dt>
-        <dd>For a same-origin navigation, send the URL. For a cross-origin navigation, send only the Origin of the referring page. Send the Referer even when navigating from HTTPS to HTTP<dd>
-        
-        <dt><a referrerpolicy="same-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=same-origin</a></dt>
-        <dd>Send the Referer only for same-origin navigations<dd>
-        
-        <dt><a referrerpolicy="origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=origin</a></dt>
-        <dd>Send only the Origin of the referring page<dd>
-        
-        <dt><a referrerpolicy="strict-origin" href="https://webdbg.com/test/refer/" target="_blank">referrerpolicy=strict-origin</a></dt>
-        <dd>Send only the Origin of the referring page; send nothing when navigating from HTTPS to HTTP<dd>
-    </dl>
+    <h1>Logout with 3rd-party cookies blocked</h1>
+    <a href="https://c3esh604.caspio.com/folderlogout">Logout</a>
+    <script type="text/javascript" src="https://c3esh604.caspio.com/dp/05ff4000bf6ca16b10184efca1ed/emb"></script>
+    <div class="cxkg"><a href="https://c3esh604.caspio.com/dp/05ff4000bf6ca16b10184efca1ed">Click here</a> to load this Caspio <a href="http://www.caspio.com" target="_blank" title="Cloud Database">Cloud Database</a></div>
 </body>
 </html>
