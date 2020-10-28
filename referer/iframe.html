@@ -14,7 +14,8 @@
             document.body.innerHTML = window.location.href;
         })();*/
         window.onload = function() {
-            document.body.innerHTML = '<strong>window.location</strong>: ' + window.location.href + '<br><strong>window.parent.location</strong>: ' + window.parent.location.href;
+            document.body.innerHTML = '<strong>window.location</strong>: ' + window.location.href;
+            document.body.innerHTML = document.body.innerHTML + '<br><strong>window.parent.location</strong>: ' + window.parent.location.href;
         }
 
     </script>
