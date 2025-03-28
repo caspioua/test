@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test Page - External Deployment</title>
+    <meta name="description" content="Test Page - External Deployment">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/common/favicon.ico">
+    <link rel="apple-touch-icon" href="/common/favicon.ico">
+    <link rel="stylesheet" href="/common/css/normalize.css">
+    <link rel="stylesheet" href="/common/css/main.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+
+        #sidepanel {
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        #header {
+            height: 80px;
+            border: 1px solid black;
+        }
+
+        #content {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">header</div>
+    <div class="flex-container">
+        <div id="sidepanel">Sidepanel</div>
+        <div id="content">
+            <h3>External Deployment</h3>
+            <script async data-page-id="076a64ca-88ec-4326-91d0-5280c32c1512" type="text/javascript" src="https://c0wdf000.qa27-apps.ucaspio.com/apppage/deploy"></script>
+        </div>
+    </div>
+</body>
+</html>
